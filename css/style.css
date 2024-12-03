@@ -97,9 +97,27 @@ width: 85px;
 .header-svg1 {
     fill: white;
     margin-left: auto;
+        transition: all 0.2s ease-in-out;
 }
 .header-svg2 {
     fill: yellow;
+        transition: all 0.2s ease-in-out;
+}
+.header-svg1:hover,
+.header-svg1:focus {
+    fill: yellow;
+     padding: 10px 15px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+    border-color: yellow;
+}
+.header-svg2:focus,
+.header-svg2:hover {
+     fill: white;
+      padding: 10px 15px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-color: yellow;
 }
 /* ========================================================================================================================================================
 MainSection

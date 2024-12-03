@@ -3,6 +3,7 @@ body {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     max-height: auto;
+    padding-bottom: 112px;
 }
 .container {
   max-width: 393px;
@@ -108,7 +109,6 @@ width: 85px;
      padding: 10px 15px;
   border: 2px solid transparent;
   border-radius: 50%;
-    border-color: yellow;
 }
 .header-svg2:focus,
 .header-svg2:hover {
@@ -116,7 +116,7 @@ width: 85px;
       padding: 10px 15px;
   border: 2px solid transparent;
   border-radius: 50%;
-  border-color: yellow;
+  border-color: yellow
 }
 /* ========================================================================================================================================================
 MaiNContent
@@ -179,24 +179,6 @@ margin-bottom: 24px;
 .page-btn:hover::before {
   width: 100%;
 }
-.page-svg {
-    position: relative;
-  top: 50px; 
-  left: 10%; 
-  transform: translateX(-35px);
-  animation: move-up-down 1s infinite ease-in-out; 
-}
-@keyframes move-up-down {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: -20px;
-  }
-  100% {
-    top: 0;
-  }
-}
 .wrapper-page-svg {
 display: flex;
 justify-content: center;
@@ -222,3 +204,22 @@ margin: 0 auto;
 }
 
 
+.page-svg {
+    position: relative;
+  top: 50px; 
+  left: 10%; 
+  transform: translateX(-35px);
+  animation: move-up-down 1s infinite ease-in-out; 
+}
+
+@keyframes move-up-down {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+}
