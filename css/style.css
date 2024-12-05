@@ -313,6 +313,9 @@ display: flex;
 align-items: center;
 margin-bottom: 24px;
 }
+.list-items-h4.lastchild2 {
+max-width: 500px;
+}
 .svg-in-h4 {
   margin-right: 8px;
  fill: #f0af2e;
