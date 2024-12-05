@@ -534,6 +534,19 @@ margin-bottom: 48px;
 .bodies-svg {
   margin-bottom: 0px;
 }
+.bodies-svg.pc {
+  display: none;
+}
+.for-pc-wrapper {
+  display: flex;
+  margin-bottom: 150px;
+  padding-right: 87px;
+}
+.svg-for-pc {
+margin-top: 48px;
+  transform: scale(2);
+  margin-left: auto;
+}
 .in-bodies-text1 {
 font-size: 32px;
 padding-left: 85px;
