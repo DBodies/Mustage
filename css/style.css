@@ -442,7 +442,7 @@ ul li:nth-child(6) {
     margin-bottom: 156px;
 }
   .pc-list-items {
-  display: fle  x;
+  display: flex;
   font-weight: 500;
 font-size: 18px;
 color: var(--color-body);
