@@ -3,16 +3,9 @@ body {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     max-height: auto;
-    padding-bottom: 112px;
 }
 .container {
   max-width: 393px;
-}
-@media screen and (min-width: 1158px) and (max-width: 1920px) {
-    .container {
-max-width: 1920px;
-padding: 64px 84px 150px 84px;
-    }
 }
 ul,
 ol {
@@ -59,10 +52,13 @@ button {
 /* ========================================================================================================================================================
 Header
   ======================================================================================================================================================== */
+.pc-list-items {
+  display: none;
+}
 .container-flex {
     display: flex;
     padding-top: 50px;
-    margin-bottom: 122px;
+    margin-bottom: 50px;
 }
 .mustage-logo {
 fill: rgb(255, 255, 255);
@@ -100,23 +96,24 @@ width: 85px;
     transition: all 0.2s ease-in-out;
 }
 .header-svg2 {
-    fill: yellow;
+    fill:  #f0af2e;
     transition: all 0.2s ease-in-out;
 }
 .header-svg1:hover,
 .header-svg1:focus {
     fill: yellow;
-     padding: 10px 15px;
+     padding: 5px 5px;
   border: 2px solid transparent;
   border-radius: 50%;
+   border-color:  #f0af2e;
 }
 .header-svg2:focus,
 .header-svg2:hover {
      fill: white;
-      padding: 10px 15px;
+      padding: 5px 5px;
   border: 2px solid transparent;
   border-radius: 50%;
-  border-color: yellow
+  border-color:  #f0af2e;
 }
 /* ========================================================================================================================================================
 MaiNContent
@@ -202,8 +199,6 @@ color: #f0af2e;;
 text-align: center;
 margin: 0 auto;
 }
-
-
 .page-svg {
     position: relative;
   top: 50px; 
@@ -211,7 +206,6 @@ margin: 0 auto;
   transform: translateX(-35px);
   animation: move-up-down 1s infinite ease-in-out; 
 }
-
 @keyframes move-up-down {
   0% {
     top: 0;
@@ -222,4 +216,133 @@ margin: 0 auto;
   100% {
     top: 0;
   }
+}
+@media screen and (min-width: 1158px){
+    ul li:nth-child(5),
+ul li:nth-child(6) {
+    display: none;
+  }
+.container-flex {
+  margin-bottom: 0;
+}
+      .container {
+max-width: 1920px;
+padding: 0 0 0 0;
+    }
+    .header-list {
+      padding-top: 24px;
+      padding-right: 84px;
+      margin-bottom: 100px;
+    }
+    .mustage-logo {
+      padding-top: 34px;
+      padding-left: 84px;
+    }
+.pc-list-items {
+  display: flex;
+  font-weight: 500;
+font-size: 18px;
+color: #fff;
+cursor: pointer;
+ transition: opacity 0.45s ease;
+}
+.header-list:hover > :not(:hover) {
+opacity: 0.5;
+}
+.header-list {
+  gap: 32px;
+}
+.page-h1 {
+  font-weight: 700;
+font-size: 40px;
+letter-spacing: 0.08em;
+max-width: 1090px;
+margin-bottom: 28px;
+}
+  .pc-list-items.lastchild {
+    font-weight: 500;
+font-size: 22px;
+color: #f0af2e;
+border: 2px solid #f0af2e;
+border-radius: 50px;
+padding: 5px 5px;
+width: 150px;
+display: flex;
+justify-content: center; 
+text-align: center;}
+.page-text {
+  font-weight: 400;
+font-size: 24px;
+text-align: center;
+max-width: 650px;
+margin-bottom: 28px;
+}
+.page-btn {
+      border: 1px dashed #f0af2e;
+border-radius: 60px;
+padding: 30px 30px;
+width: 350px;
+font-size: 20px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+color: #f0af2e;
+margin: 0 auto;
+margin-bottom: 28px;
+ transition: all 0.5s ease-in-out;
+}
+.page-btn:hover {
+  font-size: 14px;
+  border-width: 2px;
+  width: 220px;
+  color: #fff;
+  background-color: #f0af2e;
+  box-shadow: 0 4px 15px rgba(240, 175, 46, 0.5);
+}
+.page-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  background: rgba(240, 175, 46, 0.3);
+  z-index: -1;
+  transition: width 0.5s ease-in-out;
+}
+.page-btn:hover::before {
+  width: 100%;
+}
+.wrapper-page-svg {
+margin-bottom: 12px;
+}
+.page-text2 {
+font-size: 30px;
+margin-bottom: 0;
+max-width: 911px;
+}
+
+.page-span {
+font-size: 30px;
+}
+.page-svg {
+    position: relative;
+  top: 10px; 
+  left: 10px; 
+  transform: translateX(-10px);
+  animation: move-up-down 1s infinite ease-in-out; 
+}
+@keyframes move-up-down {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -25px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
 }
