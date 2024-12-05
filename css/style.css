@@ -225,7 +225,7 @@ margin-bottom: 24px;
   padding-left: 16px;
   font-weight: 400;
 font-size: 14px;
-color: #fff;
+color: var(--color-body);
 text-align: left;
 max-width: 220px;
 margin-bottom: 112px;
@@ -442,10 +442,10 @@ ul li:nth-child(6) {
     margin-bottom: 156px;
 }
   .pc-list-items {
-  display: flex;
+  display: fle  x;
   font-weight: 500;
 font-size: 18px;
-color: #fff;
+color: var(--color-body);
 cursor: pointer;
  transition: opacity 0.45s ease;
   }
@@ -557,7 +557,7 @@ margin-bottom: 48px;
 .in-bodies-text2 {
   font-weight: 700;
 font-size: 32px;
-color: #fff;
+color: var(--color-body);
 text-align: center;
 margin: 0 auto;
 margin-bottom: 48px;
@@ -575,7 +575,7 @@ margin-left:  auto;
 .text4 {
   max-width: 600px;
 font-size: 32px;
-color: #fff;
+color: var(--color-body);
 text-align: left;
 padding-left: 96px;
 margin-bottom: 0;
@@ -594,7 +594,7 @@ transform: scale(2.5);
   font-weight: 700;
 font-size: 32px;
 text-align: center;
-color: #fff;
+color: var(--color-body);
 max-width: 600px;
 margin-bottom: 48px;
   margin-top: 0;
@@ -613,7 +613,7 @@ margin-bottom: 38px;
 .list-items-h4 {
   font-weight: 500;
 font-size: 22px;
-color: #fff;
+color: var(--color-body);
 display: flex;
 align-items: center;
 margin-bottom: 24px;
@@ -627,7 +627,7 @@ max-width: 564px;
 .list-items-h4.lastchild2 {
   font-weight: 500;
 font-size: 22px;
-color: #fff;
+color: var(--color-body);
 }
 .upper-women-text {
   font-weight: 500;
