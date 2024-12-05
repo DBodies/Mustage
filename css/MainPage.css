@@ -1,12 +1,20 @@
 p,ul,ol,li,h1,h2,h3,h4,a,button {
   font-family: "Montserrat", sans-serif;
 }
-
+.lightmode {
+  --color-bg: #fff5f5;
+  --color-body: #000000;
+}
+:root {
+  --color-bg: #000000;
+  --color-body: #fff5f5;
+}
 body {
-  background-color: black;
-    padding: 0 0 0 0;
+  background-color: var(--color-bg);
+    padding: 0 0 0 0; 
     margin: 0 0 0 0;
     max-height: auto;
+     transition: background-color 0.5s ease, color 0.5s ease;
 }
 .container {
   max-width: 393px;
@@ -65,7 +73,7 @@ Header
     margin-bottom: 50px;
 }
 .mustage-logo {
-fill: rgb(255, 255, 255);
+fill: var(--color-body);
 }
 .header-list {
     display: flex;
@@ -79,11 +87,11 @@ fill: rgb(255, 255, 255);
         color:white;
 }
 .header-btn1 {
-    color:white;
-border: 1px solid #fff;
+    color:var(--color-body);
+border: 1px solid var(--color-body);
 border-radius: 50px;
 padding: 6px 34px;
-width: 85px;
+width: 105px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -91,33 +99,33 @@ width: 85px;
 }
 .header-svg {
     position: absolute;
-    fill: white;
-    margin-left: 50px;
+    fill: var(--color-body);
+    margin-left: 75px;
 }
 .header-svg1 {
-    fill: white;
+    fill: var(--color-body);
     margin-left: auto;
     transition: all 0.2s ease-in-out;
 }
 .header-svg2 {
-    fill:  #f0af2e;
+    fill:  var(--color-body);
     transition: all 0.2s ease-in-out;
 }
 .header-svg1:hover,
 .header-svg1:focus {
-    fill: yellow;
+    fill: blue;
      padding: 5px 5px;
   border: 2px solid transparent;
   border-radius: 50%;
-   border-color:  #f0af2e;
+   border-color:  none;
 }
 .header-svg2:focus,
 .header-svg2:hover {
-     fill: white;
+   fill: blue;
       padding: 5px 5px;
   border: 2px solid transparent;
   border-radius: 50%;
-  border-color:  #f0af2e;
+  border-color:  none;
 }
 /* ========================================================================================================================================================
 MaiNContent
@@ -127,7 +135,7 @@ MaiNContent
 font-size: 16px;
 letter-spacing: 0.08em;
 text-align: center;
-color: #fff;
+color:var(--color-body);
 margin: 0 auto;
 max-width: 300px;
 margin-bottom: 24px;
@@ -136,7 +144,7 @@ margin-bottom: 24px;
     font-weight: 400;
 font-size: 14px;
 text-align: center;
-color: #fff;
+color:var(--color-body);
 margin: 0 auto;
 margin-bottom: 24px;
 max-width: 260px;
@@ -161,8 +169,8 @@ margin-bottom: 24px;
 .page-btn:hover {
   font-size: 14px;
   border-width: 2px;
-  width: 220px;
-  color: #fff;
+  width: 250px;
+  color:var(--color-body);
   background-color: #f0af2e;
   box-shadow: 0 4px 15px rgba(240, 175, 46, 0.5);
 }
@@ -189,7 +197,7 @@ margin-bottom: 24px;
 .page-text2 {
     font-weight: 700;
 font-size: 16px;
-color: #fff;
+color:var(--color-body);
 text-align: center;
 margin: 0 auto;
 margin-bottom:24px;
@@ -207,6 +215,7 @@ margin: 0 auto;
     position: relative;
   top: 50px; 
   left: 10%; 
+  stroke: var(--color-body);
   transform: translateX(-35px);
   animation: move-up-down 1s infinite ease-in-out; 
 }
@@ -246,7 +255,7 @@ padding: 0 0 0 0;
   display: flex;
   font-weight: 500;
 font-size: 24px;
-color: #fff;
+color:var(--color-body);
 cursor: pointer;
  transition: opacity 0.45s ease;
 }
@@ -300,7 +309,7 @@ margin-bottom: 48px;
   font-size: 14px;
   border-width: 2px;
   width: 250px;
-  color: #fff;
+  color:var(--color-body);
   background-color: #f0af2e;
   box-shadow: 0 4px 15px rgba(240, 175, 46, 0.5);
 }
