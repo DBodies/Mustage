@@ -428,6 +428,9 @@ align-items: center;
   align-items: center;
     margin-bottom: 24px;
 }
+.for-pc-wrapper {
+  display: none;
+}
 @media screen and (min-width: 1158px) {
   ul li:nth-child(5),
 ul li:nth-child(6) {
