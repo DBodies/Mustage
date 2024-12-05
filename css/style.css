@@ -1,12 +1,20 @@
 p,ul,ol,li,h1,h2,h3,h4,a,button {
   font-family: "Montserrat", sans-serif;
 }
-
+.lightmode {
+  --color-bg: #fff5f5;
+  --color-body: #000000;
+}
+:root {
+  --color-bg: #000000;
+  --color-body: #fff5f5;
+}
 body {
-  background-color: black;
-    padding: 0 0 0 0;
+  background-color: var(--color-bg);
+    padding: 0 0 0 0; 
     margin: 0 0 0 0;
     max-height: auto;
+     transition: background-color 0.5s ease, color 0.5s ease;
 }
 .container {
   max-width: 393px;
@@ -68,7 +76,7 @@ Header
     margin-bottom: 122px;
 }
 .mustage-logo {
-fill: rgb(255, 255, 255);
+fill: var(--color-body);
 }
 .header-list {
     display: flex;
@@ -79,14 +87,14 @@ fill: rgb(255, 255, 255);
     padding-right: 26px;
 }
 .header-btn {
-        color:white;
+        color: var(--color-body);
 }
 .header-btn1 {
-    color:white;
-border: 1px solid #fff;
+    color: var(--color-body);
+border: 1px solid var(--color-body);
 border-radius: 50px;
 padding: 6px 34px;
-width: 85px;
+width: 105px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -94,33 +102,26 @@ width: 85px;
 }
 .header-svg {
     position: absolute;
-    fill: white;
-    margin-left: 50px;
+    fill: var(--color-body);
+    margin-left: 75px;
 }
 .header-svg1 {
-    fill: white;
+    fill: var(--color-body);
     margin-left: auto;
         transition: all 0.2s ease-in-out;
 }
 .header-svg2 {
-    fill: yellow;
+    fill: var(--color-body);
         transition: all 0.2s ease-in-out;
 }
 .header-svg1:hover,
 .header-svg1:focus {
-    fill: yellow;
-     padding: 10px 15px;
-  border: 2px solid transparent;
-  border-radius: 50%;
-    border-color: yellow;
+    fill:  blue;
 }
 .header-svg2:focus,
 .header-svg2:hover {
-     fill: white;
-      padding: 10px 15px;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  border-color: yellow;
+     fill: blue;
+
 }
 .pc-list-items {
   display: none;
@@ -149,7 +150,7 @@ margin-left: 17px;
   font-weight: 700;
 font-size: 16px;
 text-align: center;
-color: #fff;
+color: var(--color-body);
 max-width: 200px;
 margin: 0 auto;
 display: flex;
@@ -188,7 +189,7 @@ height: 324px;
   font-weight: 500;
 font-size: 16px;
 text-align: center;
-color: #fff;
+color: var(--color-body);
 max-width: 293px;
 margin: 0 auto;
 margin-top: 94px;
@@ -197,7 +198,7 @@ margin-top: 94px;
   font-weight: 700;
 font-size: 16px;
 text-align: center;
-color: #fff;
+color: var(--color-body);
 margin-top: 112px;
 margin-bottom: 40px;
 }
@@ -232,7 +233,7 @@ margin-bottom: 112px;
 .h3-text {
   font-weight: 700;
 font-size: 16px;
-color: #fff;
+color: var(--color-body);
 margin: 0 auto;
 text-align: center;
 margin-bottom: 24px;
@@ -245,8 +246,6 @@ margin-bottom: 24px;
 }
 .in-bodies-text1 {
   font-weight: 700;
-font-size: 16px;
-color: #fff;
 text-align: left;
 padding-left: 16px;
 margin-bottom: 24px;
@@ -255,7 +254,7 @@ text-decoration: line-through #f0af2e;
 .in-bodies-text2 {
   font-weight: 700;
 font-size: 16px;
-color: #fff;
+color: var(--color-body);
 text-align: center;
 margin: 0 auto;
 margin-bottom: 24px;
@@ -265,7 +264,7 @@ text-decoration: line-through #f0af2e;
 .in-bodies-text3 {
 font-weight: 700;
 font-size: 16px;
-color: #fff;
+color: var(--color-body);
 max-width: 150px;
 text-align: center;
 margin-left: auto;
@@ -277,7 +276,7 @@ text-decoration: line-through #f0af2e;
   max-width: 220px;
   font-weight: 400;
 font-size: 14px;
-color: #fff;
+color: var(--color-body);
 text-align: left;
 padding-left: 16px;
 margin-bottom: 24px;
@@ -286,7 +285,7 @@ margin-bottom: 24px;
   font-weight: 700;
 font-size: 16px;
 text-align: center;
-color: #fff;
+color: var(--color-body);
 max-width: 250px;
 text-align: center;
 margin: 0 auto;
@@ -297,7 +296,7 @@ margin-bottom: 24px;
 .in-h4-text {
   font-weight: 500;
 font-size: 14px;
-color: #fff;
+color: var(--color-body);
 padding-left: 16px;
 }
 .h4-list-svg {
@@ -308,7 +307,7 @@ padding-left: 16px;
 .list-items-h4 {
   font-weight: 500;
 font-size: 14px;
-color: #fff;
+color: var(--color-body);
 display: flex;
 align-items: center;
 margin-bottom: 24px;
@@ -323,7 +322,7 @@ max-width: 500px;
 .upper-women-text {
   font-weight: 500;
 font-size: 14px;
-color: #fff;
+color: var(--color-body);
 max-width: 230px;
 margin-bottom: 24px;
 padding-left: 16px;
@@ -334,7 +333,7 @@ padding-left: 16px;
 .text-zidzvon {
 font-weight: 700;
 font-size: 16px;
-color: #fff;
+color: var(--color-body);
 max-width: 270px;
 text-align: center;
 margin: 0 auto;
@@ -343,7 +342,7 @@ margin-bottom: 24px;
 .paragrapg-zidzvon {
   font-weight: 400;
 font-size: 14px;
-color: #fff;
+color: var(--color-body);
 max-width: 260px;
 margin-bottom: 24px;
 padding-left: 16px;
@@ -358,7 +357,7 @@ fill: #f0af2e;
 .upper-girl {
   font-weight: 400;
 font-size: 16px;
-color: #fff;
+color: var(--color-body);
 max-width: 180px;
 padding-left: 16px;
 margin-bottom: 24px;
@@ -367,33 +366,33 @@ margin-bottom: 24px;
   font-weight: 700;
 font-size: 16px;
 text-align: center;
-color: #fff;
+color: var(--color-body);
 max-width: 200px;
 }
 .footer-text2 {
   padding-left: 22px;
   font-weight: 700;
 font-size: 14px;
-color: #fff;
+color: var(--color-body);
 }
 .footer-text3 {
   padding-left: 16px;
   font-weight: 700;
 font-size: 14px;
-color: #fff;
+color: var(--color-body);
 padding-left: 63px;
 }
 .footer-text3.next {
 font-weight: 700;
 font-size: 20px;
-color: #fff;
+color: var(--color-body);
 padding-left: 109px;
 margin-bottom: 24px;
 }
 .footer-text3.right {
 font-weight: 700;
 font-size: 14px;
-color: #fff;
+color: var(--color-body);
 max-width: 260px;
 text-align: center;
 margin-left: auto;
@@ -403,7 +402,7 @@ padding-right: 45px;
 .footer-text4 {
   font-weight: 400;
 font-size: 14px;
-color: #fff;
+color: var(--color-body);
 max-width: 230px;
 padding-left: 16px;
 }
